@@ -39,7 +39,7 @@ project "VehStaticShadUnlock"
             "-static-libstdc++",
             "-Wl,-Bstatic,--whole-archive",
             "-lwinpthread",
-            "-Wl,--no-whole-archive,-Bdynamic",
+            "-Wl,-Bdynamic,--no-whole-archive",
         }
     filter {}
 
